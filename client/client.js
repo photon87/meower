@@ -3,7 +3,7 @@ console.log("Hello World!");
 const form = document.querySelector('form');
 const loadingElement = document.querySelector('.loading');
 const mewsElement = document.querySelector('.mews');
-const API_URL = 'http://localhost:5000/mews';
+const API_URL = 'http://meower.robotlegs.ca:5000/mews';
 
 loadingElement.style.display = '';
 
