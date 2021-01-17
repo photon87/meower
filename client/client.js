@@ -57,7 +57,11 @@ function listAllMews() {
                 contents.textContent = mew.content;
 
                 const date = document.createElement('small');
-                date.textContent = new Date(mew.created);
+                const d = new Date(mew.created);
+                const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+                date.textContent = d.toLocaleDateString(undefined, options);
+                date.textContent += ' @ ' + d.toLocaleTimeString('en-US');
+
 
                 div.appendChild(header);
                 div.appendChild(contents);
