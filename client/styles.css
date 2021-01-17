@@ -12,6 +12,12 @@
 }
 
 .mews {
-    width: 80%;
+    width: 50%;
     margin: 0 auto;
+}
+
+.mew{
+    background-color:ghostwhite;
+    margin: 2% auto;
+    padding: 2%;
 }

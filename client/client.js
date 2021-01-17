@@ -63,6 +63,8 @@ function listAllMews() {
                 div.appendChild(contents);
                 div.appendChild(date);
 
+                div.className = 'mew';
+
                 mewsElement.appendChild(div);
             });
             loadingElement.style.display = 'none';
